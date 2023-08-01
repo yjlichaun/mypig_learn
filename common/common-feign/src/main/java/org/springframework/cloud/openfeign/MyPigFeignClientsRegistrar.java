@@ -145,7 +145,7 @@ public class MyPigFeignClientsRegistrar
 	 * @return the factory class
 	 */
 	private Class<?> getSpringFactoriesLoaderFactoryClass() {
-		return YifanFeignAutoConfiguration.class;
+		return MyPigFeignClientsRegistrar.class;
 	}
 
 	private void validate(Map<String, Object> attributes) {

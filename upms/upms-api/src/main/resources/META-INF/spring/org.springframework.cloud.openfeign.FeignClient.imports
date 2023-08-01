@@ -1,0 +1,5 @@
+com.muyi.admin.api.feign.RemoteDictService
+com.muyi.admin.api.feign.RemoteDeptService
+com.muyi.admin.api.feign.RemoteLogService
+com.muyi.admin.api.feign.RemoteUserService
+com.muyi.admin.api.feign.RemoteParamService
