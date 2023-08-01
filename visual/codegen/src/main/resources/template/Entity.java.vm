@@ -1,0 +1,37 @@
+#set($excludeColumns = ["create_time","update_time","create_by","update_by"])
+package ${package}.${moduleName}.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+#if(${hasBigDecimal})
+#end
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+@Data
+@TableName("${tableName}")
+@EqualsAndHashCode(callSuper = true)
+public class ${className} extends BaseEntity {
+
+#foreach ($column in $columns)
+## 排除部分字段
+#if(!$excludeColumns.contains($column.columnName))
+    /**
+     * $column.comments
+     */
+#if($column.columnName == $pk.columnName)
+    @TableId(type = IdType.AUTO)
+#end
+    private $column.attrType $column.lowerAttrName;
+
+#end
+#end
+
+}
