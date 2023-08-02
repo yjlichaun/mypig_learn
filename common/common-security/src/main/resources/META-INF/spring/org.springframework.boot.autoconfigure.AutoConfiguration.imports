@@ -1,0 +1,3 @@
+com.muyi.common.security.config.SecurityConfiguration
+com.muyi.common.security.handler.GlobalExceptionHandler
+com.muyi.common.security.feign.MyPigFeignClientConfiguration

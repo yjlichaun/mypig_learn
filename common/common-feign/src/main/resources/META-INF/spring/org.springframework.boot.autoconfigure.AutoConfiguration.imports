@@ -1,0 +1,3 @@
+com.muyi.common.feign.MyPigFeignAutoConfiguration
+com.muyi.common.feign.sentinel.SentinelAutoConfiguration
+com.muyi.common.feign.sentinel.handle.GlobalBizExceptionHandler

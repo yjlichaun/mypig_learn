@@ -1,0 +1,2 @@
+com.muyi.common.satoken.core.dao.SaTokenDaoImpl
+com.muyi.common.satoken.core.service.SaPermissionImpl

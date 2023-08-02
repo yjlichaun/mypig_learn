@@ -1,0 +1,5 @@
+com.muyi.common.core.config.TaskExecutorConfiguration
+com.muyi.common.core.config.JacksonConfiguration
+com.muyi.common.core.config.RestTemplateConfiguration
+com.muyi.common.core.util.SpringContextHolder
+com.muyi.common.core.config.WebMvcConfiguration
