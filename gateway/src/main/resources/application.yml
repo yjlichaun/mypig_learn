@@ -1,5 +1,5 @@
 server:
-  port: 4000
+  port: 9999
 
 spring:
   application:
@@ -14,7 +14,5 @@ spring:
         namespace: @nacos.namespace@
   config:
     import:
-      - nacos:application-@profiles.active@.yml
-      - nacos:${spring.application.name}-@profiles.active@.yml
-
-
+      - optional:nacos:application-@profiles.active@.yml
+      - optional:nacos:${spring.application.name}-@profiles.active@.yml
